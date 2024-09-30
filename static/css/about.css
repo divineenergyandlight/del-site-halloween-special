@@ -1,0 +1,316 @@
+*{
+  padding: 0;
+  margin:0;
+
+}
+
+
+
+html,body{
+  background-color: black;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: serif;
+
+}
+
+
+header{
+  background-color:orange;
+  width: 100%;
+  height: 80px;
+  position:sticky;
+  top:0;
+  z-index:2;
+
+}
+
+header p {
+  display: inline-block;
+  margin-top:20px;
+
+}
+
+
+#img-logo{
+  top:0;
+  margin-top: 0;
+  padding-top: 0;
+  height: 80px;
+  width: 150px;
+}
+
+
+
+
+#nav-logo{
+  float: right;
+  margin-right: 100px;
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+  color: white;
+}
+
+#nav-logo:hover{
+  transform:scale(1.3);
+}
+
+#main-nav{
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position:fixed;
+  margin: 0 0;
+  padding:0 0;
+  bottom:0;
+  top:0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  transition: all ease-in 0.3s;
+
+
+}
+
+
+
+
+#close-nav-logo{
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 70px;
+  transition: transform .1s ease-in-out;
+  color: white;
+
+}
+
+
+#close-nav-logo:hover{
+  transform: scale(1.3);
+}
+
+#nav-list{
+  margin-top: 10vh;
+  font-size: 40px;
+  font-weight: bold;
+  list-style-type: none;
+
+}
+
+
+
+.nav-item{
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 15px;
+
+}
+
+.nav-item:hover{
+  color: orange;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+.hero{
+  width: 100%;
+  height: 55%;
+  background-image: linear-gradient(rgba(255,165,0,0.5), rgba(0,0,0,0.7)), url(../images/woods-forest.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-text{
+  font-size: 55px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: white;
+  padding-top: 150px;
+  animation: 1.5s fadeInObj;
+}
+
+
+
+
+.content-container{
+
+  height:flex;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 250px;
+  background-color: black;
+
+
+
+}
+
+
+
+#about-text{
+  width: 50%;
+  padding-top: 100px;
+  padding-left: 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.375em;
+  text-align: left;
+  animation: 1.5s fadeInObj;
+  color: white;
+}
+
+#bio-pic{
+  display: block;
+  height: 400px;
+  width: auto;
+  margin: 100px auto;
+  border: 5px solid orange;
+  border-radius: 7px;
+  animation: 1.5s fadeInObj;
+
+}
+
+#bio-pic:hover{
+  box-shadow: 0 0 2px 3px rgba(0, 140, 186, 0.5);
+}
+
+
+
+footer{
+  background-color: orange;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+
+}
+
+footer a {
+  float:left;
+  margin-top: 35px;
+  margin-left: 40px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+
+
+}
+
+#f-support{
+  float: right;
+  margin-right: 80px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  margin-top: 35px;
+}
+
+@keyframes fadeInObj{
+  0%{
+  transform: translateY(100%);
+  opacity:0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity:1;
+  }
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .hero{
+      background-attachment: initial;
+    }
+
+    #img-logo{
+      position:absolute;
+      left: -40px;
+    }
+
+    #nav-logo{
+      margin-right: 17px;
+      margin-top: 15px;
+
+    }
+
+    .hero-text{
+      padding-top: 100px;
+      font-size: 55px;
+    }
+
+    .content-container{
+      margin-bottom: 100px;
+    }
+
+    #about-text{
+      padding-top: 50px;
+      width: 90vw;
+      padding-left: 0px;
+      text-align: center;
+    }
+
+    #bio-pic{
+      margin: 50px auto;
+      width: 90vw;
+      height: auto;
+    }
+
+
+
+
+
+
+    footer a{
+      margin-left: 10px;
+    }
+
+    #f-support{
+      margin-right: 20px;
+
+    }
+
+}
+
+  @media only screen and (max-width: 767px){
+
+
+
+
+
+  }
+
+
+  @media only screen (min-width:641px)and (max-width: 1024px){
+
+
+
+
+
+  }
+
+
+
+
+  @media only screen and (min-width:600px) and (max-width: 800px){
+
+    .hero{
+      background-attachment: initial;
+    }
+
+
+
+
+
+}
